@@ -68,3 +68,95 @@
     border-radius: 8px;
     margin-top: 20px;
 }
+
+/* Main container for the principles section */
+.principlesContainer {
+    width: 100%;
+
+  
+  
+}
+
+/* Text block for the introductory text */
+
+.principlesTextTitle{
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-style: italic;
+    width: 100%;
+    text-align: center;
+}
+
+.principlesTextIntro {
+  
+    font-size: 18px;
+    line-height: 1.6;
+    color: gold;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Styling for individual images with background images */
+.principlesImg1 {
+    background-image: url(../images/pexels-jonas-mohamadi-1416736.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 40%;
+    height: 250px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    margin-bottom: 10px;
+}
+
+.principlesImg2 {
+    background-image: url(../images/pexels-felixmittermeier-1039120.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 40%;
+    height: 250px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px; 
+}
+
+.principlesImg3 {
+    background-image: url(../images/pexels-plato-terentev-3804555-5827999.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 40%;
+    height: 250px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    margin-bottom: 10px; 
+}
+
+.principlesImg4 {
+    background-image: url(../images/pexels-fauxels-3228692.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 40%;
+    height: 250px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+}
+
+/* Text below each image */
+.principlesText {
+  
+    font-size: 16px;
+   
+}
+
+.principlesFlex{
+    margin: 0 auto;
+    width: 80%;
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+    
+}
