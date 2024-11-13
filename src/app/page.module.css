@@ -72,3 +72,54 @@
     transition: background-color 0.3s ease, transform 0.2s ease;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
+
+
+/* Third Section Styling */
+
+.thirdSection {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 40px 20px;
+    background-color: #f5f5dc; /* Light beige for desert theme */
+    border-top: 2px solid #c2b280;
+  }
+  
+  .infoBox {
+    width: 30%;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: left;
+    transition: transform 0.3s ease;
+    font-size: 18px; /* Increased font size */
+  }
+  
+  .infoBox h3 {
+    color: #006400;
+    margin-bottom: 10px;
+  }
+  
+  .infoBox p {
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  .infoBox:hover {
+    transform: translateY(-10px);
+  }
+  
+  /* Responsive Styling for Smaller Screens */
+  @media screen and (max-width: 768px) {
+    .thirdSection {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .infoBox {
+      width: 80%;
+      margin-bottom: 20px;
+    }
+  }
+  
