@@ -5,7 +5,9 @@ import PageStyles from './page.module.css';
 export default function Home() {
   return (
     <main>
-      <div className={PageStyles.homeBanner}></div>
+      <div className={PageStyles.homeBanner}>
+        <h1 className={PageStyles.homeBannerTitle}>Saguaro Wildlife Park</h1>
+      </div>
     </main>
   );
 }

@@ -11,8 +11,19 @@
 }
 
 
-.homeBanner{
+.homeBanner {
     width: 100%;
-    height: 400px;
-    background-color: blue;
+    height: 700px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                url('./images/cact-sunset.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.homeBannerTitle{
+    text-align: center;
+    padding-top: 300px;
+    font-size: 72px;
+    color: white;
 }
