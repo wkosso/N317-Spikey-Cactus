@@ -71,7 +71,7 @@ Chartered by Congress in 1967, the National Park Foundation is rooted in a legac
 
       <div className={entryStles.container}>
         <Link   href="/about/principles/entry" className={entryStles.button}>
-          Leave Your Feedback
+          Add your principle
         </Link>
       </div>
         </main>
