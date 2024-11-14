@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 import PageStyles from './page.module.css';
 
@@ -26,8 +25,11 @@ export default function Home() {
 
       {/* Third Section - Last Three Divs */}
       <div className={PageStyles.thirdSection}>
+        {/* Hiking Trails Section */}
         <div className={PageStyles.infoBox}>
-          <h3>Hiking Trails</h3>
+          <Link href="explore/activities/hiking">
+            <h3 className={PageStyles.link}>Hiking Trails</h3>
+          </Link>
           <p>
             The park offers a variety of trails, from short, easy walks to challenging all-day hikes. Each trail provides a unique perspective on the diverse desert landscape. Hike through dense saguaro forests or explore rocky mountain paths with breathtaking views.
           </p>
@@ -39,8 +41,11 @@ export default function Home() {
           </p>
         </div>
 
+        {/* Wildlife Spotting Section */}
         <div className={PageStyles.infoBox}>
-          <h3>Wildlife Spotting</h3>
+          <Link href="explore/activities/wildlife">
+            <h3 className={PageStyles.link}>Wildlife Spotting</h3>
+          </Link>
           <p>
             The park is home to a wide range of wildlife, including over 200 bird species and unique mammals such as the javelina and bobcat. Birdwatchers will enjoy spotting the colorful cactus wren and elusive roadrunner.
           </p>
@@ -52,8 +57,11 @@ export default function Home() {
           </p>
         </div>
 
+        {/* Guided Tours Section */}
         <div className={PageStyles.infoBox}>
-          <h3>Guided Tours</h3>
+          <Link href="explore/activities/tours">
+            <h3 className={PageStyles.link}>Guided Tours</h3>
+          </Link>
           <p>
             Join one of our guided tours for an in-depth exploration of the park's unique ecosystem. Led by knowledgeable rangers, these tours offer fascinating insights into the history, geology, and biology of the desert environment.
           </p>
@@ -65,6 +73,6 @@ export default function Home() {
           </p>
         </div>
       </div>
-    </main>
+    </main >
   );
 }

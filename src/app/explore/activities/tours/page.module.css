@@ -1,0 +1,19 @@
+.thirdSection {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 40px 20px;
+    background-color: #f5f5dc; /* Light beige for desert theme */
+    border-top: 2px solid #c2b280;
+  }
+  
+  .infoBox {
+    width: 30%;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: left;
+    transition: transform 0.3s ease;
+    font-size: 18px; /* Increased font size */
+  }
