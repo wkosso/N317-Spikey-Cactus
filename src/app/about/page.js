@@ -1,6 +1,7 @@
 "use client";
 import PageStyles from "./about.module.css";
 import Link from 'next/link';
+import entryStles from "./principles/entry/EntryForm.module.css"
 export default function NewDocs() {
     return (
         <main>
@@ -63,6 +64,15 @@ Chartered by Congress in 1967, the National Park Foundation is rooted in a legac
          
         </Link>
       </div>
+
+
+      </div>
+
+
+      <div className={entryStles.container}>
+        <Link   href="/about/principles/entry" className={entryStles.button}>
+          Leave Your Feedback
+        </Link>
       </div>
         </main>
     );
