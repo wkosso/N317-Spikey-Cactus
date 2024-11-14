@@ -1,5 +1,6 @@
 "use client";
 import PageStyles from "./about.module.css";
+import Link from 'next/link';
 export default function NewDocs() {
     return (
         <main>
@@ -25,35 +26,44 @@ Chartered by Congress in 1967, the National Park Foundation is rooted in a legac
 
             </div>
 
-<div className={PageStyles.principlesContainer}>
+            <div className={PageStyles.principlesContainer}>
+      <h2 className={PageStyles.principlesTextTitle}>
+        For over 50 years, NPF has worked in support of our nation's treasured national parks. The depth and breadth of our work is guided by our core principles.
+      </h2>
+      <div className={PageStyles.principlesFlex}>
+        <Link className={PageStyles.Link} href="about/principles/stewardship">
+         
+            <div className={PageStyles.principlesImg1}></div>
+            <div className={PageStyles.principlesTextIntro}>Stewardship</div>
+            <p className={PageStyles.principlesText}>We foster a culture of stewardship of our national parks and the investments we make in them.</p>
+         
+        </Link>
+        
+        <Link className={PageStyles.Link} href="about/principles/impact">
+        
+            <div className={PageStyles.principlesImg2}></div>
+            <div className={PageStyles.principlesTextIntro}>Impact</div>
+            <p className={PageStyles.principlesText}>We invest in critical projects that provide lasting, measurable benefits to national parks.</p>
+         
+        </Link>
+        
+        <Link className={PageStyles.Link} href="about/principles/strategic">
+      
+            <div className={PageStyles.principlesImg3}></div>
+            <div className={PageStyles.principlesTextIntro}>Strategic</div>
+            <p className={PageStyles.principlesText}>We work with the National Park Service to identify, fund, and advance priority initiatives.</p>
+          
+        </Link>
 
-    <div className={PageStyles.principlesTextTitle}>For over 50 years, NPF has worked in support of our nation's treasured national parks. The depth and breadth of our work is guided by our core principles.</div>
-
-    <div>
-
-<div className={PageStyles.principlesFlex}>
-        <div className={PageStyles.principlesImg1}></div>
-        <div className={PageStyles.principlesText} >We foster a culture of stewardship of our national parks and the investments we make in them.</div>
-        <div className={PageStyles.principlesTextIntro}>Stewardship</div>
-
-        <div className={PageStyles.principlesImg2}></div>
- <div className={PageStyles.principlesText}>We invest in critical projects that provide lasting, measurable benefits to national parks.</div>
-        <div className={PageStyles.principlesTextIntro}>Impact</div>
-
-
-        <div className={PageStyles.principlesImg3}></div>
-         <div className={PageStyles.principlesText}>We work with the National Park Service to identify, fund, and advance priority initiatives.</div>
-<div className={PageStyles.principlesTextIntro}>strategic</div>
-
-
-        <div className={PageStyles.principlesImg4}></div>
-         <div className={PageStyles.principlesText}>We convene strategic partnerships to amplify our efforts and achieve broader impacts within our national parks.</div>
-        <div className={PageStyles.principlesTextIntro}>partnerships</div>
-
-        </div>
-    </div>
-
-</div>
+        <Link className={PageStyles.Link} href="about/principles/partner">
+          
+            <div className={PageStyles.principlesImg4}></div>
+            <div className={PageStyles.principlesTextIntro}>Partnerships</div>
+            <p className={PageStyles.principlesText}>We convene strategic partnerships to amplify our efforts and achieve broader impacts within our national parks.</p>
+         
+        </Link>
+      </div>
+      </div>
         </main>
     );
 }

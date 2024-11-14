@@ -1,0 +1,22 @@
+
+
+.principlesContainer {
+    padding: 20px;
+    background-color: #f0f8e8;
+    border-radius: 8px;
+    text-align: center;
+  
+  }
+  
+ .principlesTextIntro {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #2a6a4a;
+    margin-bottom: 15px;
+  }
+  
+  .principlesText {
+    font-size: 1rem;
+    color: #4a4a4a;
+    line-height: 1.6;
+  }
