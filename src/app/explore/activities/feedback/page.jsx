@@ -1,6 +1,6 @@
-// app/explore/feedback/page.jsx
 'use client';
 import { useState } from 'react';
+import styles from './feedbackForm.module.css';
 
 export default function FeedbackForm() {
     const [formData, setFormData] = useState({
@@ -18,14 +18,13 @@ export default function FeedbackForm() {
     const handleSubmit = (e) => {
         e.preventDefault();
         alert(`Feedback Submitted:\n${JSON.stringify(formData, null, 2)}`);
-        // You can replace the alert with API call to save data
         setFormData({ name: '', email: '', activity: 'hiking', feedback: '' });
     };
 
     return (
-        <div style={{ padding: '20px', maxWidth: '600px', margin: '0 auto' }}>
+        <div className={styles.feedbackFormContainer}>
             <h2>Share Your Experience</h2>
-            <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
+            <form onSubmit={handleSubmit} className={styles.feedbackForm}>
                 <label>
                     Name:
                     <input
